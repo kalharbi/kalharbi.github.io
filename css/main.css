@@ -1,0 +1,226 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  background-color: #FFF;
+  font: 13.34px Helvetica, Arial, sans-serif;
+  font-size: small;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+h1 { margin-bottom: 1em; }
+p { margin: 1em 0; }
+
+a         { color: #00a; }
+a:hover   { color: #000; }
+a:visited { color: #a0a; }
+
+/*****************************************************************************/
+/*
+/* Home
+/*
+/*****************************************************************************/
+.posts {
+  list-style-type: none;
+  margin-bottom: 2em;
+}
+
+.posts li {
+  line-height: 1.75em;
+}
+
+.posts span {
+  color: #aaa;
+  font-family: Monaco, "Courier New", monospace;
+  font-size: 80%;
+}
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.site {
+  font-size: 115%;
+  text-align: justify;
+  width: 42em;
+  margin: 3em auto 2em;
+  line-height: 1.5em;
+}
+
+.header a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.title {
+  display: inline-block;
+  margin-bottom: 2em;
+}
+
+.title a {
+  color: #a00;
+}
+
+.title a:hover {
+  color: #000;
+}
+
+.header a.extra {
+  color: #aaa;
+  margin-left: 1em;
+}
+
+.header a.extra:hover {
+  color: #000;
+}
+
+.meta {
+  color: #aaa;
+}
+
+.footer {
+  font-size: 80%;
+  color: #666;
+  border-top: 4px solid #eee;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+.footer .contact {
+  float: left;
+  margin-right: 3em;
+}
+
+.footer .contact a {
+  color: #8085C1;
+}
+
+.footer .rss {
+  margin-top: 1.1em;
+  margin-right: -.2em;
+  float: right;
+}
+
+.footer .rss img {
+  border: 0;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+/* standard */
+.post pre {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .4em;
+}
+
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: #eef;
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
+/*****************************************************************************/
+/*
+/* main page
+/*
+/*****************************************************************************/
+
+body.main{
+	background:#FFFFFF url("../images/me.jpg") no-repeat center top fixed;
+			width:100%;
+			margin:0 auto;
+}
+		#m_left{
+			float:left;
+			padding-left: 30px;
+			
+		}
+
+		.m_nav{
+			font-family: 'Chewy', cursive;
+			font-weight: bold;
+			font-size:40px;
+			width: 50%;
+		}
+
+		.m_nav ul{
+			padding: 6px 0 7px 0; /*6px should equal top padding of "ul li a" below, 7px should equal bottom padding + bottom border of "ul li a" below*/
+			margin: 0;
+			text-align: right; /*set value to "left", "center", or "right"*/
+		}
+		
+		.m_nav ul li{
+			display: inline;
+		}
+		
+		.m_nav ul li a{
+			color: #494949;
+			padding: 6px 3px 4px 3px; /*top padding is 6px, bottom padding is 4px*/
+			margin-right: 20px; /*spacing between each menu link*/
+			text-decoration: none;
+			border-bottom: 3px solid gray; /*bottom border is 3px*/
+		}
+		
+		.m_nav ul li a:hover, .underlinemenu ul li a.selected{
+			background-color: black;
+			color:#eee;
+		}
+
+	
+	#m_services{
+			width: auto;
+			float: left;
+			margin: 0 0 3em 0;
+			padding: 0;
+			list-style: none;
+			background-color: #fff;
+	}
+	#m_services li a{
+		display: inline;
+		padding: 8px 15px;
+		
+	}
+	h1.m_title{
+		color:#000000;
+  		font-size:80px;
+		
+	}
