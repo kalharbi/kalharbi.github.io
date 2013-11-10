@@ -10,19 +10,87 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+        <link href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+		<!-- custom fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet" type="text/css">
+		<style type="text/css">
+		.navbar-header, .navbar-collapse{
+			background-color: #fff;
+		}
+		a.navbar-brand{
+			font-family: 'Crete Round',serif;
+			font-size: 40px;
+		}
+			.navbar-custom{
+				font-family: 'Chewy', cursive;
+				font-weight: bold;
+				font-size: 40px;
+				background-color: #fff;
+				border-color: #fff;
+			}
+			.navbar-custom .navbar-nav > li > a:hover ,
+			.navbar-custom .navbar-nav > .active > a, 
+			.navbar-custom .navbar-nav > .active > a:hover, 
+			.navbar-custom .navbar-nav > .active > a:focus {
+				background-color: #000;
+				color: #eee;
+			}
+			footer{
+			   bottom: 0px;
+			   height: 0px;
+			   left: 0;
+	           position: absolute;
+	           right: 0;
+			}
+			html,body{
+			    height: 90%
+			}
+		</style>
 
     </head>
     <body>
+		<div class="container">
+		<div class="masthead">
+		<nav class="navbar navbar-default navbar-custom" role="navigation">
+		  <!-- Brand and toggle get grouped for better mobile display -->
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		      <span class="sr-only">Toggle navigation</span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		    </button>
+		    <a class="navbar-brand" href="/">Khalid Alharbi</a>
+		  </div>
 
-        <div class="main">
-
+		  <!-- Collect the nav links, forms, and other content for toggling -->
+		  <div class="collapse navbar-collapse">
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="bio.html">bio</a></li>
+		      <li><a href="projects.html">projects</a></li>
+			  <li><a href="press.html">talks & publications</a></li>
+		    </ul>
+		  </div>
+		</nav>
+		</div> <!-- /masthead -->
+	</div>
+	
+        <div class="container">
           {{ content }}
-
-          <div class="footer">
-            <div class="copyright">Coded and created by Khalid Alharbi.</div>
-          </div>
-        </div>
-
+		</div>
+		 <div class="push"><!--//--></div>
+        <footer>
+			<div class="container">
+				<p class="muted credit">
+					Coded and created by <a href="http://github.com/kalharbi/kalharbi">Khalid Alharbi</a>.
+				</p>
+			</div>
+		</footer>
+		
+	</div> <!-- /container -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

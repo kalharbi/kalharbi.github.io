@@ -1,0 +1,61 @@
+body.main {
+	background: #FFFFFF url("../images/me.jpg") no-repeat fixed center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.m_nav {
+	font-family: 'Chewy', cursive;
+	font-weight: bold;
+	font-size: 40px;
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.m_nav ul {
+	padding: 6px 0 7px 0; /*6px should equal top padding of "ul li a" below, 7px should equal bottom padding + bottom border of "ul li a" below*/
+	text-align: center;
+	
+}
+	
+.m_nav ul li {
+	display: inline;
+}
+		
+.m_nav ul li a {
+	color: #494949;
+	padding: 6px 3px 4px 3px; /*top padding is 6px, bottom padding is 4px*/
+	margin-right: 20px; /*spacing between each menu link*/
+	text-decoration: none;
+	border-bottom: 3px solid gray; /*bottom border is 3px*/
+}
+		
+.m_nav ul li a:hover, .underlinemenu ul li a.selected {
+	background-color: #000;
+	color: #eee;
+}
+
+	
+#m_services {
+	width: auto;
+	float: left;
+	margin: 0 0 3em 0;
+	padding: 0;
+	list-style: none;
+	background-color: #fff;
+}
+#m_services li a {
+	display: inline;
+	padding: 8px 15px;
+	}
+	
+h1.m_title{
+	font-family: 'Crete Round',serif;
+	color:#000000;
+	font-size: 80px;
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+}
