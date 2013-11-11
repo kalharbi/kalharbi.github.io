@@ -11,7 +11,8 @@ The content of my personal website is Copyright Khalid Alharbi. This includes th
 * _posts/
 * images
 * /*.md (All markdown files)
-You may not reuse anything therein without my permission.
+
+You may not reuse anything there without my permission.
 
 All other directories and files are licensed under the MIT license. This includes _layout, css, js, *.yml, etc. You may reuse any of them without my permission.
 
