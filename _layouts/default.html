@@ -1,3 +1,14 @@
+---
+navigation:
+  - text: bio
+    url: /bio.html
+  - text: projects
+    url: /projects.html
+  - text: talks & publications
+    url: /press.html
+---
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,12 +25,31 @@
 		<!-- custom fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet" type="text/css">
 		<style type="text/css">
+        html,
+        body {
+        	height: 100%;
+        }
+		/* Wrapper for page content to push down footer */
+        #wrap {
+          min-height: 100%;
+          height: auto !important;
+          height: 100%;
+          /* Negative indent footer by it's height */
+          margin: 0 auto -100px;
+        }
+		.container{
+			color: #000;
+			font-family: "Swiss 721 W01 Light","Helvetica Neue",Helvetica,"Lucida Grande",Arial,sans-serif;
+		    font-size: 14pt;
+		    text-align: left;
+		}
 		.navbar-header, .navbar-collapse{
 			background-color: #fff;
 		}
 		a.navbar-brand{
 			font-family: 'Crete Round',serif;
 			font-size: 40px;
+			color: #000;
 		}
 			.navbar-custom{
 				font-family: 'Chewy', cursive;
@@ -28,66 +58,85 @@
 				background-color: #fff;
 				border-color: #fff;
 			}
-			.navbar-custom .navbar-nav > li > a:hover ,
 			.navbar-custom .navbar-nav > .active > a, 
 			.navbar-custom .navbar-nav > .active > a:hover, 
 			.navbar-custom .navbar-nav > .active > a:focus {
 				background-color: #000;
 				color: #eee;
 			}
-			footer{
-			   bottom: 0px;
-			   height: 0px;
-			   left: 0;
-	           position: absolute;
-	           right: 0;
+			.navbar-custom .navbar-nav > li > a:hover {
+				background-color: #404040;
+				color: #fff;
 			}
-			html,body{
-			    height: 90%
-			}
+	        #push,
+	        #footer {
+	          height: 100px;
+	        }
+	        #footer {
+	          background-color: #f5f5f5;
+			  font-size: 20px;
+	        }
+	        @media (max-width: 767px) {
+	          #footer {
+	            margin-left: -20px;
+	            margin-right: -20px;
+	            padding-left: 20px;
+	            padding-right: 20px;
+	          }
+		  }
 		</style>
-
+		
     </head>
     <body>
-		<div class="container">
-		<div class="masthead">
-		<nav class="navbar navbar-default navbar-custom" role="navigation">
-		  <!-- Brand and toggle get grouped for better mobile display -->
-		  <div class="navbar-header">
-		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		      <span class="sr-only">Toggle navigation</span>
-		      <span class="icon-bar"></span>
-		      <span class="icon-bar"></span>
-		      <span class="icon-bar"></span>
-		    </button>
-		    <a class="navbar-brand" href="/">Khalid Alharbi</a>
-		  </div>
-
-		  <!-- Collect the nav links, forms, and other content for toggling -->
-		  <div class="collapse navbar-collapse">
-		    <ul class="nav navbar-nav">
-		      <li class="active"><a href="bio.html">bio</a></li>
-		      <li><a href="projects.html">projects</a></li>
-			  <li><a href="press.html">talks & publications</a></li>
-		    </ul>
-		  </div>
-		</nav>
+		<div id= "wrap">
+			<div class="container">
+				<div class="masthead">
+					<h3 class="muted"><a class="navbar-brand" href="/">Khalid Alharbi</a></h3>
+					<br/><br/><br/>
+					<nav class="navbar navbar-default navbar-custom" role="navigation">
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse">
+							<ul class="nav navbar-nav">
+			   			 		{% for link in page.navigation %}
+								<li {% if page.url == link.url %}class="active"{% endif %}>
+									<a href="{{link.url}}" title="{{link.title}}">{{link.text}}</a>
+								</li>
+								{% endfor %}
+							</ul>
+						</div>
+					</nav>
 		</div> <!-- /masthead -->
-	</div>
+	
 	
         <div class="container">
           {{ content }}
 		</div>
-		 <div class="push"><!--//--></div>
-        <footer>
-			<div class="container">
-				<p class="muted credit">
-					Coded and created by <a href="http://github.com/kalharbi/kalharbi">Khalid Alharbi</a>.
-				</p>
-			</div>
-		</footer>
 		
+		<div id="push"></div>
 	</div> <!-- /container -->
+	</div> <!-- /wrap -->
+	
+		<div id="footer">
+			<div class="col-xs-6 col-md-4 contact small">
+			<p>Khalid Alharbi<br />
+			   [khalid at kalharbi dot com]
+		     </p>
+  	       <ul class="list-inline">
+  	         <li><a href="http://github.com/kalharbi/"><img src="../images/github.png" alt="github/kalharbi"/></a></li>
+  	         <li><a href="http://twitter.com/khalidalharbi/"><img src="../images/twitter.png" alt="@KhalidAlharbi"/></a></li>
+  	       </p>
+			</div>
+		<div class="col-xs-6 col-md-4 contact small">
+		<p class="muted small text-center">
+		 Coded and designed by <a href="http://github.com/kalharbi/kalharbi">Khalid Alharbi</a>
+		 &copy; 2013
+		</p>
+		</div>
+
+		 
+		</div>
+		
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

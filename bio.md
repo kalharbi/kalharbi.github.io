@@ -10,4 +10,4 @@ I’m a Computer Science Ph.D. student in the Human-Centered Computing group at 
 
 Education
 -----------
-I attained a B.Sc. in Computer Science from King Abdulaziz University in Saudi Arabia in 2007. In 2012, I acompleted my Master's degree in Computer Science at the University of Colorado Boulder.
+I attained a B.Sc. in Computer Science from King Abdulaziz University in Saudi Arabia in 2007. In 2012, I completed my Master's degree in Computer Science at the University of Colorado Boulder.
