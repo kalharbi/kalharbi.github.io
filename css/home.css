@@ -1,5 +1,5 @@
 body.main {
-	background: #FFFFFF url("../images/me.jpg") no-repeat fixed center;
+	background: #FFFFFF url("../images/me.jpg") no-repeat fixed right;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -8,15 +8,12 @@ body.main {
 	font-family: 'Chewy', cursive;
 	font-weight: bold;
 	font-size: 40px;
-	width: 50%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .m_nav ul {
 	padding: 6px 0 7px 0; /*6px should equal top padding of "ul li a" below, 7px should equal bottom padding + bottom border of "ul li a" below*/
-	text-align: center;
-	
+	text-align: left;
+	margin-left: 5%;
 }
 	
 .m_nav ul li {
@@ -35,27 +32,11 @@ body.main {
 	background-color: #000;
 	color: #eee;
 }
-
-	
-#m_services {
-	width: auto;
-	float: left;
-	margin: 0 0 3em 0;
-	padding: 0;
-	list-style: none;
-	background-color: #fff;
-}
-#m_services li a {
-	display: inline;
-	padding: 8px 15px;
-	}
 	
 h1.m_title{
 	font-family: 'Crete Round',serif;
 	color:#000000;
 	font-size: 80px;
-	width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-	text-align: center;
+	margin-left: 5%;
+	text-align: left;
 }
