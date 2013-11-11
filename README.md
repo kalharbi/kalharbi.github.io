@@ -1,7 +1,7 @@
 kalharbi
 ========
 
-The personal website of Khalid Alharbi
+The personal website of [Khalid Alharbi](http://kalharbi.com). It's proudly powered by [jekyll](http://jekyllrb.com/)
 
 License
 -------
