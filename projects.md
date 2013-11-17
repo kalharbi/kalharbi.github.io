@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Khalid - projects
+name: projects
+group: navigation
 ---
 
 

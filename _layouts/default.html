@@ -1,14 +1,3 @@
----
-navigation:
-  - text: bio
-    url: /bio.html
-  - text: projects
-    url: /projects.html
-  - text: talks & publications
-    url: /press.html
----
-
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -55,7 +44,6 @@ navigation:
 				font-family: 'Chewy', cursive;
 				font-weight: bold;
 				font-size: 40px;
-				background-color: #fff;
 				border-color: #fff;
 			}
 			.navbar-custom .navbar-nav > .active > a, 
@@ -90,22 +78,27 @@ navigation:
     <body>
 		<div id= "wrap">
 			<div class="container">
-				<div class="masthead">
-					<h3 class="muted"><a class="navbar-brand" href="/">Khalid Alharbi</a></h3>
-					<br/><br/><br/>
-					<nav class="navbar navbar-default navbar-custom" role="navigation">
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse">
-							<ul class="nav navbar-nav">
-			   			 		{% for link in page.navigation %}
-								<li {% if page.url == link.url %}class="active"{% endif %}>
-									<a href="{{link.url}}" title="{{link.title}}">{{link.text}}</a>
-								</li>
-								{% endfor %}
-							</ul>
-						</div>
-					</nav>
-		</div> <!-- /masthead -->
+				<nav class="navbar navbar-default navbar-custom" role="navigation">
+				  <!-- Brand and toggle get grouped for better mobile display -->
+				  <div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				      <span class="sr-only">Toggle navigation</span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				    </button>
+				    <a class="navbar-brand" href="/">Khalid Alharbi</a>
+				  </div>
+
+				  <!-- Collect the nav links, forms, and other content for toggling -->
+				  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				    <ul class="nav navbar-nav">
+					    {% assign pages_list = site.pages %}
+					    {% assign group = 'navigation' %}
+					    {% include pages_list %}
+				    </ul>
+				  </div><!-- /.navbar-collapse -->
+				</nav>
 	
 	
         <div class="container">

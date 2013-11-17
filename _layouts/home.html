@@ -10,12 +10,103 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/home.css">
-		<!--custom font -->
-		<link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+        <link href="/css/bootstrap.css" rel="stylesheet" media="screen" type="text/css">
+		<!-- custom fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet" type="text/css">
+		<style type="text/css">
+        html,
+        body {
+			background: #FFFFFF url("../images/me.jpg") no-repeat fixed right;
+        	height: 100%;
+			background
+        }
+		/* Wrapper for page content to push down footer */
+        #wrap {
+          min-height: 100%;
+          height: auto !important;
+          height: 100%;
+          /* Negative indent footer by it's height */
+          margin: 0 auto -100px;
+        }
+		.container{
+			color: #000;
+			font-family: "Swiss 721 W01 Light","Helvetica Neue",Helvetica,"Lucida Grande",Arial,sans-serif;
+		    font-size: 14pt;
+		    text-align: left;
+		}
+		.navbar-header, .navbar-collapse{
+			background-color: #fff;
+		}
+		a.navbar-brand{
+			font-family: 'Crete Round',serif;
+			font-size: 40px;
+			color: #000;
+		}
+			.navbar-custom{
+				font-family: 'Chewy', cursive;
+				font-weight: bold;
+				font-size: 40px;
+				border-color: #fff;
+			}
+			.navbar-custom .navbar-nav > .active > a, 
+			.navbar-custom .navbar-nav > .active > a:hover, 
+			.navbar-custom .navbar-nav > .active > a:focus {
+				background-color: #000;
+				color: #eee;
+			}
+			.navbar-custom .navbar-nav > li > a:hover {
+				background-color: #404040;
+				color: #fff;
+			}
+			h1.m_title{
+				font-family: 'Crete Round',serif;
+				color:#000000;
+				font-size: 80px;
+				margin-left: 5%;
+				text-align: left;
+				vertical-align: middle;
+			}
+		</style>
+		
     </head>
+    <body>
+		<div id= "wrap">
+			<div class="container">
+				<nav class="navbar navbar-default navbar-custom" role="navigation">
+				  <!-- Brand and toggle get grouped for better mobile display -->
+				  <div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				      <span class="sr-only">Toggle navigation</span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				    </button>
+				  </div>
+
+				  <!-- Collect the nav links, forms, and other content for toggling -->
+				  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				    <ul class="nav navbar-nav">
+					    {% assign pages_list = site.pages %}
+					    {% assign group = 'navigation' %}
+					    {% include pages_list %}
+				    </ul>
+				  </div><!-- /.navbar-collapse -->
+				</nav>
 	
-    <body class= "main">
+	
+        <div class="container">
           {{ content }}
+		</div>
+		
+		<div id="push"></div>
+	</div> <!-- /container -->
+	</div> <!-- /wrap -->
+	
+		
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
