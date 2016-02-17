@@ -1,7 +1,0 @@
-name: Khalid Alharbi
-markdown: redcarpet
-pygments: true
-analytics :
-  provider : google 
-  google : 
-      tracking_id : 'UA-45616442-1'
