@@ -1,0 +1,28 @@
+.container
+  .row.divider
+    .col-md-3.text-center
+        img#profile-image(src="/images/khalidAlharbi.jpg" alt="Khalid Alharbi")
+        ul#social-links
+          li
+            a(href="#{ email }" title="Email")
+              i(class="fa fa-envelope")
+          li
+            a(href="#{ googleScholar }" title="Google Scholar")
+              i(class="fa fa-google")
+          li
+            a(href="/" title="Home")
+              i(class="fa fa-home")
+    .col-md-6.text-justify
+      h2="Khalid Alharbi"
+      .short-bio!=partial("_shared/bio")
+    .col-md-3.news-box
+      h2="News"
+      .news!= partial("_shared/news")
+  .row.divider
+    h2.box-heading="Selected Projects"
+    for project in public.projects._data
+      != partial("projects/project", {"project": project})
+  .row
+    h2.box-heading="Publications"
+  != partial("papers/publications", { "publications": public.papers._data })
+  .divider

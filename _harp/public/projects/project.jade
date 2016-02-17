@@ -1,0 +1,17 @@
+.col-md-4
+  h3
+    !=project.title
+  img.project-thumbnail(src=project.image)
+  p
+    !=project.description
+  .project-publications
+    if project.publications
+      ul
+        li.project-papers="Papers:"
+        for publication in project.publications
+          li
+            a(href=publication.pdf, title='View pre-print')=publication.venue
+    if project.website
+      .project-website  Website: 
+        a(href=project.website, title="project website")=project.website
+  

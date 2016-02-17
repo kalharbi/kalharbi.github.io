@@ -1,0 +1,12 @@
+{
+  "globals": {
+    "title": "Khalid Alharbi",
+    "description": "Khalid Alharbi is a Computer Science PhD candidate at the University of Colorado Boulder.",
+    "uri": "http://kalharbi.com",
+    "email": "http://www.google.com/recaptcha/mailhide/d?k=01dWzglyq9fAjg_dgKitKgxw==&c=pZLOF0EFkaCHdrkrmOAomtpZEeZfbYaPpdbNQ_C1Bmg=",
+    "googleScholar": "https://scholar.google.com/citations?user=VVzcqYYAAAAJ",
+    "service": {
+      "analytics": "UA-45616442-1"
+    }
+  }
+}

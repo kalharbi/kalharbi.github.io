@@ -1,0 +1,19 @@
+[
+  {
+    "title": "Mining Mobile Applications",
+    "image": "/images/miningApps.jpeg",
+    "description": "Indexing and mining hundreds of thousands of Android applications.",
+    "publications": [{
+      "venue": "MobileHCI'15",
+      "pdf": "/papers/miningDesignPattern.pdf"
+      }
+    ],
+    "website": "http://sieveable.io"
+  },
+  {
+    "title": "Accessible GUI Automation",
+    "image": "/images/sikulislides.png",
+    "description": "Making GUI Automation accessible to all users with little to no programming experience.",
+    "website": "http://slides.sikuli.org"
+  }
+]

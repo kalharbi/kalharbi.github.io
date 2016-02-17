@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Collect, Decompile, Extract, Stats, and Diff: Mining Design Pattern Changes in Android Apps.",
+    "authors": "Khalid Alharbi and Tom Yeh.",
+    "booktitle": "MobileHCI 2015, 17th International Conference on Human-Computer Interaction with Mobile Devices and Services.",
+    "acm": "http://dl.acm.org/citation.cfm?id=2785892",
+    "bibtex": "/papers/miningDesignPattern.bib",
+    "year": 2015,
+    "pdf": "/papers/miningDesignPattern.pdf",
+    "thumb": "/papers/miningDesignPattern-thumb.jpeg",
+    "award": "Honorable Mention"
+  },
+  {
+    "title": "Android Apps Consistency Scrutinized",
+    "authors": "Khalid Alharbi, Sam Blackshear, Emily Kowalczyk, Atif M. Memon, Bor-Yuh Evan Chang, and Tom Yeh.",
+    "booktitle": "CHI 2014 Extended Abstracts on Human Factors in Computing Systems",
+    "acm": "http://dl.acm.org/citation.cfm?id=2581352",
+    "bibtex": "/papers/androidConsistencyScrutinized.bib",
+    "thumb": "/papers/androidConsistencyScrutinized-thumb.png",
+    "year": 2014
+  }
+]
