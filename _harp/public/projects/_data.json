@@ -5,7 +5,7 @@
     "description": "Indexing and mining hundreds of thousands of Android applications.",
     "publications": [{
       "venue": "MobileHCI'15",
-      "pdf": "/papers/miningDesignPattern.pdf"
+      "pdf": "/publications/miningDesignPattern.pdf"
       }
     ],
     "website": "http://sieveable.io"
