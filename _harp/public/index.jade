@@ -21,10 +21,10 @@
   .row.divider
     h2.box-heading="Selected Projects"
     for project in public.projects._data
-      != partial("projects/project", {"project": project})
+      != partial("projects/_project", {"project": project})
   .row
     h2.box-heading="Publications"
     #publications
     for publication, id in public.publications._data
-      != partial("publications/publication", { "id": id, "publication": publication })
+      != partial("publications/_publication", { "id": id, "publication": publication })
   .divider
