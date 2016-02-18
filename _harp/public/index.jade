@@ -24,7 +24,7 @@
       != partial("projects/_project", {"project": project})
   .row
     h2.box-heading="Publications"
-    #publications
+  #publications
     for publication, id in public.publications._data
       != partial("publications/_publication", { "id": id, "publication": publication })
   .divider

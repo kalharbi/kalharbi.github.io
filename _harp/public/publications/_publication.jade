@@ -13,7 +13,7 @@
       if publication.acm
         a(class="btn btn-default", href="#{ publication.acm }", title="ACM Digital Library") ACM
       if publication.bibtex
-        a(class="btn btn-default", data-toggle="collapse", data-target="#bibtex-" + index, title="View BibTex")  BibTex
-        .collapse(id="bibtex-" + index)
+        a(class="btn btn-default", data-toggle="collapse", data-target="#bibtex-" + id, title="View BibTex")  BibTex
+        .collapse(id="bibtex-" + id)
           .panel.panel-default
             .panel-body!=partial(".." + publication.bibtex)
