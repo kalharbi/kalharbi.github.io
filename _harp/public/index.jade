@@ -4,14 +4,14 @@
         img#profile-image(src="/images/khalidAlharbi.jpg" alt="Khalid Alharbi")
         ul#social-links
           li
+            a(href="/cv.html" title="CV")
+              i(class="fa fa-file-text-o")
+          li
             a(href="#{ email }" title="Email")
               i(class="fa fa-envelope")
           li
             a(href="#{ googleScholar }" title="Google Scholar")
               i(class="fa fa-google")
-          li
-            a(href="/" title="Home")
-              i(class="fa fa-home")
     .col-md-6.text-justify
       h2="Khalid Alharbi"
       .short-bio!=partial("_shared/bio")
