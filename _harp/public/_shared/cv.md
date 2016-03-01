@@ -47,3 +47,6 @@ I'm a Computer Science PhD candidate at the University of Colorado Boulder, wher
 ### Master of Science, Computer Science
 University of Colorado at Boulder, USA, 2011 - 2012### Bachelor of Science, Computer Science
 King Abdulaziz University, Saudi Arabia, 2003 - 2007
+
+## Contact
+Website: [http://kalharbi.com](http://kalharbi.com)
