@@ -1,3 +1,2 @@
-- Sieveable, the deep Android search engine, goes live at [sieveable.io](http://sieveable.io). <span class="news-date">Oct 13th, 2015</span>
-- MobileHCI'15 paper receives an Honorable Mention Award. <span class="news-date">Jun 22nd, 2015</span>
+- Teaching a new class <a href="https://cpit490.gitlab.io">CPIT-490: cloud adminstration</a>. <span class="news-date">Sep 2nd, 2018</span>
 - Paper accounting for mining UI design pattern changes accepted to MobileHCI'15.<span class="news-date">Apr 16th, 2015</span>

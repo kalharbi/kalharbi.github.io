@@ -1,5 +1,1 @@
-I'm a Computer Science PhD candidate in the area of human-centered computing (HCC) at the University of Colorado Boulder,
-where I work with [Tom Yeh](http://tomyeh.info) in the [Sikuli lab](http://lab.sikuli.org).
-My research combines technical approaches from the areas of human-computer interaction, software engineering, and information retrieval.
-In particular, I apply data driven approaches to study various aspects of mobile applications over time.
-I am especially interested in developing large-scale retrieval systems for mobile applications to support diverse types of data analyses.
+I'm an assistant professor of Computer Science at King Abdulaziz University, Saudi Arabia. I received my Ph.D. degree from the University of Colorado Boulder, where I worked with Prof. Tom Yeh in the Sikuli lab. My research combines technical approaches from the areas of human-computer interaction, software engineering, and data science. In particular, I apply data-driven approaches to study various aspects of user interfaces over time. I am especially interested in designing and building large-scale data systems to support diverse types of data analyses.
